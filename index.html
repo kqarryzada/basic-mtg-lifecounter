@@ -1,12 +1,16 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>mtg life counter</title>
+    <title>MTG life counter</title>
+    
+    <!-- There are probably 80 better ways to do this, but meh -->
+    <style> h1 { font-size: 10em; } </style>
+
 </head>
-<body>
+<body style="background-color:mediumorchid">
     <button id=dec  style="left" onclick="decrement()"> -</button>
     <button id=incr style="right" onclick="increment()">+</button>
-    <h1 id=currLife align="center">40</h1>
+    <h1 id=currLife align="center"></h1>
 </body>
 <script src="index.js"></script>
 </html>

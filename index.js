@@ -1,24 +1,29 @@
-// var mainText     = document.getElementById("mainText");
-var lifeCount  = 40;
-var incrButton = document.getElementById("incr");
-var decButton  = document.getElementById("dec");
+var lifeCount;
+var incrButton;
+var decButton
+init();
 
-function updateScreen() {
-    document.getElementById("currLife").innerHTML = lifeCount;
+function init() {
+    lifeCount  = 40;
+    incrButton = document.getElementById("incr");
+    decButton  = document.getElementById("dec");
+    document.getElementById("currLife").innerHTML = lifeCount; 
 }
 
 function increment() {
-    // window.alert("Working");
     if(lifeCount < 100)
         lifeCount++;
     updateScreen();
 }
 
 function decrement() {
-    // window.alert("Also working");
     if(lifeCount > 0)
         lifeCount--;
     else
         window.alert("You dead, son");
     updateScreen();
+}
+
+function updateScreen() {
+    document.getElementById("currLife").innerHTML = lifeCount;
 }
