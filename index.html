@@ -2,15 +2,19 @@
 <html>
 <head>
     <title>MTG life counter</title>
-    
-    <!-- There are probably 80 better ways to do this, but meh -->
-    <style> h1 { font-size: 10em; } </style>
-
+    <link href="layout.css" rel="stylesheet" type="text/css">
 </head>
 <body style="background-color:mediumorchid">
-    <button id=dec  style="left" onclick="decrement()"> -</button>
-    <button id=incr style="right" onclick="increment()">+</button>
-    <h1 id=currLife align="center"></h1>
+      <img src="hw.jpg" class="img1">
+      <p id="currLife" class="txt"></p>
+      <div class="row">
+        <div class="column">
+            <img src="hw.jpg" class="img2" id="decr" onclick="decrement()">
+        </div>
+        <div class="column">
+            <img src="hw.jpg" class="img2" id="incr" onclick="increment()">
+        </div>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>

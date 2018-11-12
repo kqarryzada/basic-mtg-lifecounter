@@ -1,12 +1,12 @@
 var lifeCount;
 var incrButton;
-var decButton
+var decrButton
 init();
 
 function init() {
     lifeCount  = 40;
     incrButton = document.getElementById("incr");
-    decButton  = document.getElementById("dec");
+    decrButton  = document.getElementById("decr");
     document.getElementById("currLife").innerHTML = lifeCount; 
 }
 
