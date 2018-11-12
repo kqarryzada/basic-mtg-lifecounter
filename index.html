@@ -5,16 +5,19 @@
     <link href="layout.css" rel="stylesheet" type="text/css">
 </head>
 <body style="background-color:mediumorchid">
-      <img src="hw.jpg" class="img1">
-      <p id="currLife" class="txt"></p>
-      <div class="row">
+    <img src="hw.jpg" class="decrButton">
+    <p id="currLife" class="txt"></p>
+    <div class="row">
         <div class="column">
-            <img src="hw.jpg" class="img2" id="decr" onclick="decrement()">
+            <img src="hw.jpg" class="incrButton" id="decr" onclick="decrement()">
         </div>
         <div class="column">
-            <img src="hw.jpg" class="img2" id="incr" onclick="increment()">
+            <img src="hw.jpg" class="incrButton" id="incr" onclick="increment()">
         </div>
     </div>
+
+    <!-- <img src="0.gif" class="img1" id="lose" onclick="location.reload();" href="javascript:hideImage();"> -->
 </body>
 <script src="index.js"></script>
+<script> document.addEventListener('contextmenu', event => event.preventDefault()); </script>
 </html>
