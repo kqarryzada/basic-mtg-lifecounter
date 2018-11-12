@@ -14,7 +14,7 @@ p {
 img {
     height: 98%;
     width: 98%;
-    opacity: 0;
+    opacity: 1;
     border:10px solid #021a40;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
