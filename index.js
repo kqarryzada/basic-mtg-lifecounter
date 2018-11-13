@@ -11,10 +11,13 @@ function init() {
 }
 
 function increment() {
-    if (lifeCount < 99)
+    if (lifeCount < 99) {
         lifeCount++;
-
-    updateScreen();
+        updateScreen();
+    } else {
+        // If someone tries to increment past 99
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }
 }
 
 function decrement() {
