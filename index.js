@@ -13,8 +13,9 @@ function init() {
 }
 
 function increment() {
-    if (lifeCount < 100)
+    if (lifeCount < 99)
         lifeCount++;
+
     updateScreen();
 }
 
@@ -22,8 +23,9 @@ function decrement() {
     if (lifeCount > 0) {
         lifeCount--;
         updateScreen();
-    } else
-        showImage()
+    } else {
+        // showImage()
+    }
 }
 
 function updateScreen() {
