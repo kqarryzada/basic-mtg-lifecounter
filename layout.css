@@ -53,7 +53,7 @@ img {
 .txt {
     top: 17%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%);
     z-index: 1;
 }
 .imgButton {
