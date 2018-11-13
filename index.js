@@ -1,7 +1,6 @@
 var lifeCount;
 var incrButton;
 var decrButton;
-var loseImg;
 init();
 
 function init() {
@@ -9,7 +8,6 @@ function init() {
     incrButton = document.getElementById("incr");
     decrButton  = document.getElementById("decr");
     document.getElementById("currLife").innerHTML = lifeCount; 
-    loseImg = document.getElementById("lose");
 }
 
 function increment() {
@@ -23,18 +21,14 @@ function decrement() {
     if (lifeCount > 0) {
         lifeCount--;
         updateScreen();
-    } else {
-        // showImage()
+    } 
+
+    // If, after the update, it's equal to 0
+    if (lifeCount == 0) {
+        window.open("0.gif","_self");
     }
 }
 
 function updateScreen() {
     document.getElementById("currLife").innerHTML = lifeCount;
-}
-
-function hideImage() {
-    loseImg.style.visibility = "hidden";
-}
-function showImage() {
-    loseImg.style.visibility = "visible";
 }
